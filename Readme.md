@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Velykorodnov Sergii](https://up.htmlacademy.ru/htmlcss/30/user/1716029).
-* Наставник: [Наталья Зотова](https://htmlacademy.ru/profile/id1079951).
+* Наставник: [](https://htmlacademy.ru/profile/id1079951).
 
 ---
 
