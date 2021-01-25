@@ -42,14 +42,17 @@
           </ul>
       </nav>
       <a href="#">Корзина</a>
+
+      <div>
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+
        <!--================ End Navigation ================-->
     </header>
     <!--================ End Header ================-->
     <!--================ Main ================-->
     <main>
-      <h1>Магазин готовых шаблонов</h1>
-	  
-    
+          
      <!--================ Left Sidebar ================-->
       <section>
         <h2>Фильтр товаров</h2>
@@ -58,11 +61,8 @@
           <fieldset>
             <legend>СТоимость:</legend>
             <div>
-              <div></div>
-              <label>
-                от <input type="text" name="min">
-                до <input type="text" name="max">
-              </label>
+              <label for="before">от</label><input type="text" name="min" id="before">
+              <label for="after">до</label><input type="text" name="min" id="after">
               <a href="#">Filter</a>
             </div>
           </fieldset>
@@ -135,10 +135,12 @@
           <ul>
         <!--================ Product item  ================-->
             <li>
-                <img src="produc1.jpg" width="359" height="578">
                 <div>
-                  <h3>Sedona</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
+                   <img src="produc1.jpg" width="359" height="578">
+                </div>
+                <div>
+                  <div><p><a href="#">Sedona</a></p></div>
+                  <p>Информационный сайт для туристов</p>
                   <button type="button">9 900 ₽</button>
                 </div>
               </li>
@@ -148,10 +150,12 @@
          <!--================ Product item  ================-->
 
             <li>
-                <img src="produc2.jpg" width="359" height="578">
                 <div>
-                  <h3>Pink</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
+                 <img src="produc2.jpg" width="359" height="578">
+                </div>
+                <div>
+                  <div><p><a href="#">Pink</a></p></div>
+                  <p>Информационный сайт для туристов</p>
                   <button type="button">9 900 ₽</button>
                 </div>
             </li>
@@ -161,23 +165,12 @@
          <!--================ Product item  ================-->
 
             <li>
-                <img src="produc3.jpg" width="359" height="578">
                 <div>
-                  <h3>Borodinski</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
-                  <button type="button">9 900 ₽</button>
+                  <img src="produc3.jpg" width="359" height="578">
                 </div>
-            </li>
-
-         <!--================End Product item  ================-->
-         
-         <!--================ Product item  ================-->
-
-            <li>
-                <img src="produc4.jpg" width="359" height="578">
                 <div>
-                  <h3>Mishka</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
+                  <div><p><a href="#">Borodinski</a></p></div>
+                  <p>Информационный сайт для туристов</p>
                   <button type="button">9 900 ₽</button>
                 </div>
             </li>
@@ -187,10 +180,12 @@
          <!--================ Product item  ================-->
 
             <li>
-                <img src="produc5.jpg" width="359" height="578">
+               <div>
+                  <img src="produc4.jpg" width="359" height="578">
+               </div>
                 <div>
-                  <h3>A+</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
+                  <div><p><a href="#">Mishka</a></p></div>
+                  <p>Информационный сайт для туристов</p>
                   <button type="button">9 900 ₽</button>
                 </div>
             </li>
@@ -200,10 +195,27 @@
          <!--================ Product item  ================-->
 
             <li>
-                <img src="produc6.jpg" width="359" height="578">
                 <div>
-                  <h3>Кваст</h3>
-                  <a href="#"></a><p>Информационный сайт для туристов</p></a>
+                  <img src="produc5.jpg" width="359" height="578">
+                </div>
+                <div>
+                  <div><p><a href="#">A+</a></p></div>
+                  <p>Информационный сайт для туристов</p>
+                  <button type="button">9 900 ₽</button>
+                </div>
+            </li>
+
+         <!--================End Product item  ================-->
+         
+         <!--================ Product item  ================-->
+
+            <li>
+                <div>
+                  <img src="produc6.jpg" width="359" height="578">
+                </div>
+                <div>
+                  <div><p><a href="#">Кваст</a></p></div>
+                  <p>Информационный сайт для туристов</p>
                   <button type="button">9 900 ₽</button>
                 </div>
             </li>
@@ -211,7 +223,12 @@
           </ul>
         </div>
         
-         
+         <ul>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+         </ul>
 
       </section>
     <!--================ End Products ================-->
