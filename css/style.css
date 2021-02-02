@@ -46,8 +46,18 @@ img {
   height: auto;
 }
 
-.hidden {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 /* User navigation */
@@ -68,10 +78,6 @@ img {
   background-color: var(--basic-grey);
 }
 
-
-.site-navigation {
-  list-style: none;
-}
 
 .site-navigation-current a:not([href]) {
   border-bottom: 1px solid var(--basic-red);
@@ -109,9 +115,6 @@ img {
 
 /* Slider */
 
-.slider-nav-list {
-  list-style: none;
-}
 
 .slide-title {
   color: var(--basic-black);
@@ -120,34 +123,26 @@ img {
   line-height: 55px;
 }
 
-.slide-img1 {
-  background-image: url("../img/slide1.jpg");
+.slide-item {
   background-color: var(--basic-grey);
   background-repeat: no-repeat;
   background-size: 760px 431px;
   height: 431px;
   width: auto;
   background-position: right;
+}
+
+
+.slide-img1 {
+  background-image: url("../img/slide1.jpg");
 }
 
 .slide-img2 {
   background-image: url("../img/slide2.jpg");
-  background-color: var(--basic-grey);
-  background-repeat: no-repeat;
-  background-size: 760px 431px;
-  height: 431px;
-  width: auto;
-  background-position: right;
 }
 
 .slide-img3 {
   background-image: url("../img/slide3.jpg");
-  background-color: var(--basic-grey);
-  background-repeat: no-repeat;
-  background-size: 760px 431px;
-  height: 431px;
-  width: auto;
-  background-position: right;
 }
 
 .slider-nav-list li {
@@ -162,15 +157,7 @@ img {
 
 /* About */
 
-.about-list {
-  list-style: none;
-}
-
-.about-item {
-  text-align: left;
-}
-
-.about-item .about-title {
+.about-title {
   color: var(--basic-black);
   font-weight: 700;
   font-size: 24px;
@@ -180,6 +167,7 @@ img {
 /* Buttons */
 
 .button {
+  display: inline-block;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -268,9 +256,6 @@ img {
   text-transform: uppercase;
 }
 
-.features-list {
-  list-style: none;
-}
 
 .features-list li:before {
   display: inline-block;
@@ -304,10 +289,6 @@ img {
 
 
 /* Partners */
-
-.partners-list {
-  list-style: none;
-}
 
 .partner-item {
   opacity: 0.2;
@@ -385,7 +366,6 @@ img {
 }
 
 .social-button {
-  list-style: none;
   height: 81px;
   width: 81px;
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
