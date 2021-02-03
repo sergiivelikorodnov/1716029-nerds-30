@@ -423,10 +423,7 @@ h1 {
   text-align: center;
 }
 
-.sidebar h2,
-.features-container p,
-.filter legend,
-.product-title a {
+.small-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -462,7 +459,6 @@ h1 {
   vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-red);
-  border: none;
   border-radius: 3px;
   padding: 17px 72px 15px 72px;
 }
