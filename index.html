@@ -31,76 +31,80 @@
 
   <!--================ Header ================-->
   <header class="main-header">
-    <div class="main-header-container">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" width="159" height="65" alt="Дизайн Студия Нёрдс">
-      </a>
-      <!--================ Navigation ================-->
-      <nav class="main-navigation">
-        <ul class="site-navigation list-reset">
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a href="products.html">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="cart-link" href="#">Корзина</a>
+    <div class="container">
+      <div class="main-header-menu">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="159" height="65" alt="Дизайн Студия Нёрдс">
+        </a>
+        <!--================ Navigation ================-->
+        <nav class="main-navigation">
+          <ul class="site-navigation list-reset">
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a href="products.html">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="cart-link" href="#">Корзина</a>
+      </div>
+
+      <!--================ End Navigation ================-->
+
+      <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
+      <!--================ Slider secton ================-->
+      <section class="slider">
+        <!--================ Revslider ================-->
+        <div class="container">
+          <div class="slides-list">
+            <div class="slide-item slide-img1">
+              <!--================ Image will be on background ================-->
+              <p class="slide-title">Долго, дорого скрупулезно.</p>
+              <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.
+              </p>
+              <a class="button button-slide" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-item slide-img2 visually-hidden">
+              <!--================ Image will be on background ================-->
+              <p class="slide-title">Любим математику как никто другой</p>
+              <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных
+                пропорций</p>
+              <a class="button button-slide" href="#">Узнать больше</a>
+            </div>
+            <div class="slide-item slide-img3 visually-hidden">
+              <!--================ Image will be on background ================-->
+              <p class="slide-title">Только ночь, только хардкор</p>
+              <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
+                начинается.</p>
+              <a class="button button-slide" href="#">Узнать больше</a>
+            </div>
+          </div>
+          <div>
+            <ul class="slider-nav-list list-reset">
+              <li><a></a></li>
+              <li><a href="#"></a></li>
+              <li><a href="#"></a></li>
+            </ul>
+          </div>
+        </div>
+        <!--================ End Revslider ================-->
+      </section>
+      <!--================ End Slider secton ================-->
     </div>
-    <!--================ End Navigation ================-->
   </header>
   <!--================ End Header ================-->
   <!--================ Main ================-->
-  <main class="main-container">
-    <h1 class="visually-hidden">Дизайн студия Нёрдс</h1>
-    <!--================ Slider secton ================-->
-    <section class="slider">
-      <!--================ Revslider ================-->
-      <div class="container">
-        <div class="slides-list">
-          <div class="slide-item slide-img1">
-            <!--================ Image will be on background ================-->
-            <p class="slide-title">Долго, дорого скрупулезно.</p>
-            <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-            <a class="button button-slide" href="#">Узнать больше</a>
-          </div>
-          <div class="slide-item slide-img2 visually-hidden">
-            <!--================ Image will be on background ================-->
-            <p class="slide-title">Любим математику как никто другой</p>
-            <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных
-              пропорций</p>
-            <a class="button button-slide" href="#">Узнать больше</a>
-          </div>
-          <div class="slide-item slide-img3 visually-hidden">
-            <!--================ Image will be on background ================-->
-            <p class="slide-title">Только ночь, только хардкор</p>
-            <p class="slide-description">Работать днем, как все? Мы против этого. Ближе к полуночи работа только
-              начинается.</p>
-            <a class="button button-slide" href="#">Узнать больше</a>
-          </div>
-        </div>
-        <div>
-          <ul class="slider-nav-list list-reset">
-            <li><a></a></li>
-            <li><a href="#"></a></li>
-            <li><a href="#"></a></li>
-          </ul>
-        </div>
-      </div>
-      <!--================ End Revslider ================-->
-    </section>
-    <!--================ End Slider secton ================-->
-
+  <main class="main-container container">
 
     <!--================ About secton ================-->
-    <section class="about container">
+    <section class="about">
       <h2 class="visually-hidden">О нас</h2>
       <ul class="about-list list-reset">
         <li class="about-item">
@@ -126,7 +130,7 @@
     <!--================ End About secton ================-->
 
     <!--================ Features secton ================-->
-    <section class="features container">
+    <section class="features">
       <div class="features-container">
         <h2 class="visually-hidden">Преимущества</h2>
         <p class="feature-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
@@ -155,7 +159,7 @@
     <!--================ End Features secton ================-->
 
     <!--================ Partners secton ================-->
-    <section class="partners container">
+    <section class="partners">
       <ul class="partners-list list-reset">
         <h2 class="visually-hidden">Наши партнеры</h2>
         <li class="partner-item">
@@ -191,7 +195,7 @@
       </div>
     </div>
     <!--==== Social icons ======-->
-    <div class="footer-social">
+    <div class="footer-social container">
       <ul class="footer-list list-reset">
         <li class="social-button list-reset"><a href="#">
             <svg width="27" height="15" viewbox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
