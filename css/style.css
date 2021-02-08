@@ -192,6 +192,11 @@ img {
   height: 431px;
   width: auto;
   background-position: right;
+
+}
+
+.slide-item:not(.slide-item-active) {
+  display: none;
 }
 
 .slide-description {
