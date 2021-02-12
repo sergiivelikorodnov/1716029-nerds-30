@@ -137,7 +137,7 @@ img {
   display: grid;
   grid-template-columns: 250px 1fr min-content;
   margin: 0 auto;
-  padding: 0 10px;
+  padding-top: 49px;
   /*   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 }
@@ -198,7 +198,6 @@ img {
   background-position: right bottom;
   position: relative;
   padding: 0;
-  padding-top: 60px;
   margin: 0;
 }
 
@@ -258,7 +257,7 @@ img {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
-  padding-top: 60px;
+  padding-top: 80px;
   /*   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 }
@@ -269,7 +268,10 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin-top: 17px;
 }
+
+
 
 
 /* Buttons */
@@ -459,7 +461,6 @@ img {
 /* Partners */
 .partners {
   margin: 0 auto;
-  padding: 0;
   padding: 60px 0px 50px 0px;
   border-bottom: 2px solid var(--basic-grey);
 
@@ -469,23 +470,36 @@ img {
 }
 
 .partner-item {
-  opacity: 0.2;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-.partner-item:not(:last-child) {
-  border-right: 2px solid var(--basic-grey);
-
+.partner-item img {
+  opacity: 0.2;
+  -webkit-transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -ms-transition: opacity .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out;
+  transition: opacity .35s ease-in-out;
 }
 
-.partner-item:hover,
-.partner-item:focus {
+.partner-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background: var(--basic-grey);
+  right: -8%;
+}
+
+.partner-item:hover img,
+.partner-item:focus img {
   opacity: 1;
 }
 
-.partner-item:active {
+.partner-item:active img {
   opacity: 0.2;
 }
 
@@ -524,6 +538,7 @@ img {
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding-top: 68px;
   /*   outline: 5px solid rgba(255, 0, 200, 0.7);
   outline-offset: -5px; */
 
@@ -551,7 +566,6 @@ img {
   top: 40%;
   left: 55%;
   z-index: 1;
-
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -600,11 +614,20 @@ img {
   text-align: center;
   cursor: pointer;
   margin-right: 10px;
+  -webkit-transition: background .35s ease-in-out;
+  -moz-transition: background .35s ease-in-out;
+  -ms-transition: background .35s ease-in-out;
+  -o-transition: background .35s ease-in-out;
+  transition: background .35s ease-in-out;
 }
 
 .social-button:hover,
 .social-button:focus {
   background: var(--basic-red);
+}
+
+.social-button:active {
+  background: var(--basic-grey);
 }
 
 .main-footer {
@@ -630,11 +653,6 @@ img {
 
 .footer-list {
   display: flex;
-  padding-top: 68px;
-}
-
-.footer-text {
-  padding-top: 68px;
 }
 
 .social-button svg {
@@ -709,13 +727,8 @@ fieldset {
   padding-right: 15px;
 }
 
-.products-filter li {
-  color: var(--basic-black);
+.products-filter li>:not(.products-filter-current) {
   opacity: 0.3;
-}
-
-.products-filter li:first-child {
-  opacity: 1;
 }
 
 
