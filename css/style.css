@@ -669,7 +669,7 @@ img {
 }
 
 .page-title {
-  padding-bottom: 58px;
+  padding-bottom: 68px;
 }
 
 h1 {
@@ -740,13 +740,18 @@ fieldset {
 .filter-container {
   display: grid;
   width: 760px;
-  grid-template-columns: 1fr 1fr 60px;
+  grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin: 0 auto;
   padding: 0;
   /* outline: 5px solid rgba(17, 0, 255, 0.7);
   outline-offset: -5px; */
 
+}
+
+.sort-main {
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -859,7 +864,7 @@ fieldset {
 }
 
 .pagination-list {
-  padding-left: 80px;
+  padding-top: 35px;
   padding-bottom: 40px;
 }
 
@@ -871,6 +876,16 @@ fieldset {
 .pagination-item a {
   color: var(--basic-black);
   background-color: var(--basic-grey);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+}
+
+.pagination-list li:last-child a {
+  width: 260px;
 }
 
 .pagination-item a:hover,
