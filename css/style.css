@@ -5,6 +5,7 @@
   --basic-dark: #283136;
   --basic-grey: #eeeeee;
   --basic-extra-grey: #666666;
+  --basic-filter-range: #D7DCDF;
   --basic-white: #ffffff;
   --basic-green: #00CA74;
   --basic-yellow: #EFC849;
@@ -142,6 +143,11 @@ img {
   outline-offset: -5px; */
 }
 
+.menu-active {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--basic-red);
+}
+
 
 .site-navigation-current a:not([href]) {
   border-bottom: 1px solid var(--basic-red);
@@ -232,8 +238,8 @@ img {
 
 .slider-nav-list {
   position: absolute;
-  bottom: 10px;
-  left: 45%
+  bottom: 88px;
+  left: 47%
 }
 
 .slider-nav-list li {
@@ -244,8 +250,18 @@ img {
   border-radius: 50%;
   text-align: center;
   cursor: pointer;
+  margin-right: 7px;
 }
 
+.slider-nav-item-active {
+  position: absolute;
+  height: 6px;
+  width: 6px;
+  left: 4px;
+  top: 4px;
+  border-radius: 50%;
+  border: 2px solid #C1C1C1;
+}
 
 /* About */
 .about {
@@ -286,6 +302,7 @@ img {
   border: none;
   border-radius: 3px;
   padding: 17px 40px 15px 39px;
+  cursor: pointer;
 }
 
 .button:hover,
@@ -695,8 +712,83 @@ h1 {
 }
 
 
+/* RANGE FILTER */
+
+
+.range-filter {
+  width: 260px;
+  margin-top: 49px;
+  position: relative;
+}
+
+.range-control {
+  height: 41px;
+  background-color: var(--basic-grey);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.range-control .range-scale {
+  height: 2px;
+  background: var(--basic-filter-range);
+
+}
+
+.range-control .range-bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-control .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-extra-grey);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 var(--basic-filter-range);
+  position: absolute;
+  left: 0;
+  top: 20%;
+  cursor: pointer;
+}
+
+.range-control .toggle-min {
+  left: 5%;
+}
+
+.range-control .toggle-max {
+  left: 65%;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  width: 60px;
+  padding: 10px;
+  margin-left: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  background: var(--basic-grey);
+
+
+}
+
+
 .fieldset-container {
-  padding-bottom: 48px;
+  padding-bottom: 28px;
 }
 
 fieldset {
@@ -749,6 +841,67 @@ fieldset {
 
 }
 
+.filter-option label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-label {
+  padding-left: 35px;
+}
+
+.filter-input-checkbox+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  height: 23px;
+  width: 25px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  height: 23px;
+  width: 25px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 7px;
+  height: 25px;
+  width: 25px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+
 .sort-main {
   display: flex;
   justify-content: space-between;
@@ -765,7 +918,7 @@ fieldset {
 }
 
 .products-container {
-  padding-top: 40px;
+  padding-top: 32px;
 
 }
 
