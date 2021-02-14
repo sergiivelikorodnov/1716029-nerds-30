@@ -21,8 +21,16 @@
   <link href="css/style.css" rel="stylesheet">
   <!--================ My own CSS ================-->
 
-  <!-- REVOLUTION STYLE SHEETS will be here-->
+  <style>
+    .show-popup {
+      top: 10%;
+    }
 
+    .hide-popup {
+      top: -100vh;
+    }
+
+  </style>
   <!--================ Vendor JS ================-->
 
 </head>
@@ -107,19 +115,21 @@
         <li class="about-item">
           <div class="about-image"><img src="img/feature1.png" width="300" height="146" alt="Веб сайты"></div>
           <p class="about-title">Веб сайты</p>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <p>Мир никогда не будет прежним &nbsp; &nbsp; &nbsp; после того как увидит ваш сайт!</p>
           <a class="button button-red" href="#">Заказать</a>
         </li>
         <li class="about-item">
           <div class="about-image"><img src="img/feature2.png" width="300" height="146" alt="Приложения"></div>
           <p class="about-title">Приложения</p>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <p>Покорите топ-10 приложений &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;в AppStore и
+            Google Play
+          </p>
           <a class="button button-green" href="#">Заказать</a>
         </li>
         <li class="about-item">
           <div class="about-image"><img src="img/feature3.png" width="300" height="146" alt="Презентации"></div>
           <p class="about-title">Презентации</p>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <p>Вы даже не подозреваете, &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; насколько вы изумительны!</p>
           <a class="button button-yellow" href="#">Заказать</a>
         </li>
       </ul>
@@ -189,7 +199,7 @@
           <p class="footer-title">NЁRDS DESIGN STUDIO</p>
           <p class="footer-address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <a class="footer-phone" href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
-          <a class="button button-contact" href="#">НАПИШИТЕ НАМ</a>
+          <a class="button button-contact" onclick="showPopup();">НАПИШИТЕ НАМ</a>
         </div>
       </div>
     </div>
@@ -225,7 +235,7 @@
   <!--================ End Footer ================-->
 
   <!--================ Popup ================-->
-  <section class="popup">
+  <section class="popup" id="popup">
     <div class="popup-wrap">
       <h2>Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -246,11 +256,23 @@
         </div>
         <button class="button button-send" type="submit">Отправить</button>
       </form>
-      <div class="popup-close" type="button"></div>
+      <div class="popup-close" type="button" onclick="showPopup()"></div>
     </div>
   </section>
   <!--================ End Popup ================-->
 
+  <script>
+    function showPopup() {
+      var element = document.getElementById("popup");
+      element.classList.toggle("show-popup");
+    }
+
+    function hidePopup() {
+      var element = document.getElementById("popup");
+      element.classList.toggle("hide-popup");
+    }
+
+  </script>
 </body>
 
 </html>
