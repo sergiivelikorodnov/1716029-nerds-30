@@ -97,10 +97,12 @@ img {
 } */
 .site-navigation {
   display: flex;
+  margin-left: 91px;
+  flex-wrap: wrap;
 }
 
 .site-navigation li {
-  padding: 20px;
+  padding: 25px 26px 15px 20px;
 }
 
 
@@ -115,13 +117,12 @@ img {
   /* outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px; */
   position: relative;
-  margin-top: 10px;
 }
 
 .cart-link {
   display: flex;
-  padding-top: 20px;
-  padding-left: 30px;
+  padding-top: 25px;
+  padding-left: 40px;
   -webkit-transition: color .35s ease-in-out;
   -moz-transition: color .35s ease-in-out;
   -ms-transition: color .35s ease-in-out;
@@ -137,14 +138,14 @@ img {
   width: 15px;
   position: absolute;
   left: 0px;
-  top: 28px;
+  top: 32px;
 }
 
 .main-header-menu {
   display: grid;
   grid-template-columns: 250px 1fr min-content;
   margin: 0 auto;
-  padding-top: 49px;
+  margin-top: 49px;
   /*   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 }
@@ -202,7 +203,7 @@ img {
   font-size: 55px;
   line-height: 55px;
   width: 400px;
-  padding-top: 80px;
+  padding-top: 67px;
   margin: 0;
 }
 
@@ -229,9 +230,9 @@ img {
 
 .slide-description {
   width: 400px;
-  padding-bottom: 40px;
+  padding-bottom: 38px;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 28px;
 }
 
 
@@ -277,7 +278,7 @@ img {
 /* About */
 .about {
   border-bottom: 2px solid var(--basic-grey);
-  padding-bottom: 80px;
+  padding-bottom: 81px;
 }
 
 .about-list {
@@ -295,6 +296,7 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
   margin-top: 17px;
   text-transform: uppercase;
 }
@@ -337,6 +339,12 @@ img {
   box-shadow: inset 0px 3px 0px var(--basic-shadow);
 }
 
+
+.feature-button {
+  margin-top: 16px;
+  padding: 14px 40px 12px 40px;
+}
+
 .button-yellow {
   background-color: var(--basic-yellow);
 }
@@ -371,8 +379,8 @@ img {
 }
 
 .button-contact {
-  padding: 17px 44px 15px 44px;
-  margin-top: 30px;
+  padding: 15px 44px 12px 45px;
+  margin-top: 33px;
 }
 
 .button-send {
@@ -419,7 +427,7 @@ img {
 }
 
 .feature-title-small {
-  padding: 24px 0 10px 0;
+  padding: 24px 0 8px 0;
 }
 
 
@@ -430,7 +438,7 @@ img {
   font-size: 45px;
   line-height: 45px;
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
 }
 
 .feature-title-small,
@@ -444,7 +452,7 @@ img {
 }
 
 .features-list li {
-  padding-left: 7px;
+  padding-left: 11px;
 }
 
 .features-list li::before {
@@ -454,7 +462,7 @@ img {
   height: 2px;
   background: var(--basic-red);
   position: relative;
-  left: -8px;
+  left: -11px;
   top: -5px;
 }
 
@@ -469,7 +477,8 @@ img {
 
 .achievements p {
   color: var(--basic-black);
-  padding-top: 11px;
+  padding-top: 14px;
+  text-align: center;
 }
 
 .achievements-list dt {
@@ -480,14 +489,16 @@ img {
   color: var(--basic-black);
 }
 
-
+.achievements-list sup {
+  font-size: 62%;
+}
 
 .achievements-list {
   width: 360px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px 20px;
-  padding-top: 17px;
+  gap: 12px 0px;
+  padding-top: 14px;
   /* outline: 5px solid rgb(255, 174, 0);
   outline-offset: -5px; */
 }
@@ -507,7 +518,7 @@ img {
 /* Partners */
 .partners {
   margin: 0 auto;
-  padding: 40px 0px 30px 0px;
+  padding: 50px 0px 35px 0px;
   border-bottom: 2px solid var(--basic-grey);
   margin-bottom: 20px;
   /* outline: 5px solid rgba(0, 255, 0, 0.7);
@@ -562,6 +573,7 @@ img {
   display: grid;
   grid-template-columns: repeat(4, 260px);
   gap: 40px;
+  align-items: center;
   /* outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 
@@ -609,14 +621,14 @@ img {
 .footer-marker {
   content: "";
   position: absolute;
-  top: 40%;
-  left: 55%;
+  top: 87px;
+  left: 822px;
   z-index: 1;
   background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 150px;
-  height: 150px;
+  width: 230px;
+  height: 190px;
 
 
   /*   outline: 5px solid rgba(2, 104, 7, 0.7);
@@ -625,8 +637,8 @@ img {
 
 .footer-contacts {
   position: absolute;
-  top: 12%;
-  left: 10%;
+  top: 53px;
+  left: 140px;
   z-index: 1;
   width: 319px;
   background-color: var(--basic-white);
@@ -650,6 +662,12 @@ img {
   color: var(--basic-extra-grey);
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
+  margin-top: 8px;
+}
+
+.footer-address {
+  margin-bottom: 15px;
 }
 
 .social-button {
@@ -674,6 +692,11 @@ img {
 
 .social-button:active {
   background: var(--basic-grey);
+}
+
+.footer-text {
+  margin-left: 13px;
+  margin-top: 6px;
 }
 
 .main-footer {
