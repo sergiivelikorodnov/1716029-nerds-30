@@ -846,8 +846,8 @@ img {
 }
 
 .page-title {
-  padding-bottom: 68px;
-  padding-top: 30px;
+  padding-bottom: 71px;
+  padding-top: 34px;
 }
 
 h1 {
@@ -883,7 +883,7 @@ h1 {
 }
 
 .sidebar {
-  padding-top: 20px;
+  padding-top: 18px;
 }
 
 
@@ -893,7 +893,7 @@ h1 {
 .range-filter {
   width: 260px;
   margin-top: 49px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   position: relative;
 }
 
@@ -989,7 +989,7 @@ fieldset {
   text-transform: uppercase;
   text-align: center;
   display: inline;
-  padding-right: 15px;
+  padding-right: 20px;
 }
 
 .products-filter li>:not(.products-filter-current) {
@@ -1078,7 +1078,7 @@ fieldset {
   opacity: 0.3;
 }
 
-.filter-input-radio:checked .sort-main {
+.sort-main {
   display: flex;
   justify-content: space-between;
 }
@@ -1103,7 +1103,7 @@ fieldset {
   width: 760px;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 25px;
-  gap: 40px;
+  gap: 30px 40px;
 
   /*  outline: 5px solid rgba(255, 0, 98, 0.7);
   outline-offset: -5px; */
@@ -1194,11 +1194,14 @@ fieldset {
 
 .pagination-list {
   padding-top: 30px;
+
 }
 
 .pagination-list li {
   display: inline-block;
   text-align: center;
+  margin-right: 7px;
+  text-transform: uppercase;
 }
 
 .pagination-item a {
