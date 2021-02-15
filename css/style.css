@@ -318,11 +318,16 @@ img {
   border-radius: 3px;
   padding: 17px 40px 15px 39px;
   cursor: pointer;
+  -webkit-transition: background-color .35s ease-in-out;
+  -moz-transition: background-color .35s ease-in-out;
+  -ms-transition: background-color .35s ease-in-out;
+  -o-transition: background-color .35s ease-in-out;
+  transition: background-color .35s ease-in-out;
+
 }
 
 .button:hover,
 .button:focus {
-  color: var(--basic-white);
   background-color: var(--basic-red-hover);
 }
 
@@ -836,8 +841,22 @@ h1 {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
+  -webkit-transition: color .35s ease-in-out;
+  -moz-transition: color .35s ease-in-out;
+  -ms-transition: color .35s ease-in-out;
+  -o-transition: color .35s ease-in-out;
+  transition: color .35s ease-in-out;
   /* outline: 5px solid rgba(0, 255, 64, 0.7);
   outline-offset: -5px;*/
+}
+
+.small-title:hover,
+.small-title:focus {
+  color: var(--basic-red);
+}
+
+.small-title:active {
+  color: var(--basic-grey-active);
 }
 
 .sidebar {
@@ -993,12 +1012,18 @@ fieldset {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
 .filter-input-checkbox:checked+label::before {
   content: "";
   background-image: url("../img/checkbox-on.svg");
+  opacity: 0.4;
+}
 
+.filter-input-checkbox:checked:hover+label::before {
+
+  opacity: 1;
 }
 
 .filter-input-radio+label::before {
@@ -1019,14 +1044,15 @@ fieldset {
 
 }
 
-.filter-input-radio:checked:hover::before {
-  opacity: 1;
-}
 
 .filter-input-radio:checked+label::before {
   content: "";
   background-image: url("../img/radio-on.svg");
   opacity: 0.4;
+}
+
+.filter-input-radio:disabled+label {
+  opacity: 0.3;
 }
 
 .filter-input-radio:checked .sort-main {
@@ -1161,6 +1187,11 @@ fieldset {
   justify-content: center;
   align-items: center;
   border-radius: 3px;
+  -webkit-transition: background-color .35s ease-in-out;
+  -moz-transition: background-color .35s ease-in-out;
+  -ms-transition: background-color .35s ease-in-out;
+  -o-transition: background-color .35s ease-in-out;
+  transition: background-color .35s ease-in-out;
 }
 
 .pagination-list li:last-child a {
@@ -1168,9 +1199,13 @@ fieldset {
 }
 
 .pagination-item a:hover,
-.pagination-item a:focus,
-.pagination-item a:active {
+.pagination-item a:focus {
   background-color: var(--basic-grey-hover);
+}
+
+.pagination-item a:active {
+  background-color: var(--basic-grey-active);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
 
 .pagination-item-current a,
