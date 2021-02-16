@@ -19,20 +19,9 @@
   <!--================ Vendor CSS ================-->
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  <!--================ My own CSS ================-->
-
-  <style>
-    .show-popup {
-      top: 50%;
-    }
-
-    .hide-popup {
-      top: -100vh;
-    }
-
-  </style>
 
   <!--================ Vendor JS ================-->
+  <script src="js/script.js"></script>
 
 </head>
 
@@ -87,15 +76,15 @@
           <div class="filter-option range-filter">
             <div class="range-control">
               <div class="range-scale">
-                <div class="range-bar" style="width: 30%; margin-left: 20%"></div>
+                <div class="range-bar" style="width: 60%; margin-left: 6%"></div>
               </div>
-              <div class="toggle toggle-min" style="left: 20%" tabindex="0"></div>
-              <div class="toggle toggle-max" style="left: 50%" tabindex="0"></div>
+              <div class="toggle toggle-min" style="left: 7%" tabindex="0"></div>
+              <div class="toggle toggle-max" style="left: 62%" tabindex="0"></div>
             </div>
 
             <div class="price-controls">
-              <label class="min-price">от<input type="number" name="min-price" value="0"></label>
-              <label class="max-price">до<input type="number" name="max-price" value="15000"></label>
+              <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до<input type="text" name="max-price" value="15000"></label>
             </div>
           </div>
         </fieldset>
@@ -164,11 +153,12 @@
             <li><a href="#">По типу</a></li>
             <li><a href="#">По названию</a></li>
           </ul>
-          <ul class="products-filter list-reset">
-            <li><a><svg width="11" height="10" viewbox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <ul class="products-filter-sort list-reset">
+            <li class="filter-sort filter-sort-active"><a><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#231F20" />
                 </svg></a></li>
-            <li><a href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
+            <li class="filter-sort"><a href="#"><svg width="11" height="10" viewbox="0 0 11 10" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
                 </svg></a></li>
@@ -188,8 +178,8 @@
               <img src="img/product1.jpg" width="358" height="578" alt="Продукт">
             </div>
             <div class="product-details">
-              <a class="small-title" href="#">Sedona</a>
-              <p>Информационный сайт для туристов</p>
+              <a class="product-title" href="#">Sedona</a>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -209,7 +199,7 @@
             </div>
             <div class="product-details">
               <a class="product-title" href="#">Pink</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -229,7 +219,7 @@
             </div>
             <div class="product-details">
               <a class="product-title" href="#">Borodinski</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -249,7 +239,7 @@
             </div>
             <div class="product-details">
               <a class="product-title" href="#">Mishka</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -269,7 +259,7 @@
             </div>
             <div class="product-details">
               <a class="product-title" href="#">A+</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -289,7 +279,7 @@
             </div>
             <div class="product-details">
               <a class="product-title" href="#">Кваст</a>
-              <p>Информационный сайт для туристов</p>
+              <p>Информационный сайт для&nbsp;туристов</p>
               <span>9 900 ₽</span>
             </div>
           </li>
@@ -381,19 +371,6 @@
     </div>
   </section>
   <!--================ End Popup ================-->
-
-  <script>
-    function showPopup() {
-      var element = document.getElementById("popup");
-      element.classList.toggle("show-popup");
-    }
-
-    function hidePopup() {
-      var element = document.getElementById("popup");
-      element.classList.toggle("hide-popup");
-    }
-
-  </script>
 
 </body>
 
