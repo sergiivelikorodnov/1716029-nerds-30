@@ -215,7 +215,7 @@ img {
 .slide-item {
   position: relative;
   margin: 0;
-  padding-top: 73px;
+  padding-top: 72px;
   padding-bottom: 79px;
   padding-right: 66%;
   background-color: var(--basic-grey);
@@ -292,7 +292,7 @@ img {
   display: grid;
   grid-template-columns: 300px 300px 300px;
   column-gap: 100px;
-  padding-top: 81px;
+  padding-top: 82px;
   /*   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 }
@@ -743,8 +743,8 @@ img {
   width: 960px;
   margin: auto;
   left: 50%;
-  margin-left: -25%;
   top: -100vh;
+  transform: translate(-50%, -50%);
   background: var(--basic-white);
   z-index: 10;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
