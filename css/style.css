@@ -527,6 +527,7 @@ img {
   margin: 0 auto;
   padding: 50px 0px 35px 0px;
   border-bottom: 2px solid var(--basic-grey);
+  margin-bottom: 18px;
   /* outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px; */
 
@@ -707,7 +708,7 @@ img {
 
 .main-footer {
   position: relative;
-  padding-top: 80px;
+  padding-top: 62px;
   padding-bottom: 52px;
   /*  outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px; */
@@ -770,6 +771,14 @@ img {
 
 .popup form {
   padding-top: 37px;
+}
+
+.show-popup {
+  top: 50%;
+}
+
+.hide-popup {
+  top: -100vh;
 }
 
 .input-wrap label,
@@ -853,6 +862,7 @@ img {
 .page-title {
   padding-bottom: 71px;
   padding-top: 34px;
+  margin: 0;
 }
 
 h1 {
@@ -939,8 +949,8 @@ h1 {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--basic-filter-range);
   position: absolute;
-  left: 0;
-  top: 20%;
+  /*   left: 0; */
+  top: 22%;
   cursor: pointer;
 }
 
@@ -984,7 +994,8 @@ fieldset {
 
 .fieldset-list {
   line-height: 40px;
-  padding-top: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 
@@ -1001,12 +1012,22 @@ fieldset {
   text-align: center;
   display: inline;
   padding-right: 20px;
+
 }
 
 .products-filter li>:not(.products-filter-current) {
   opacity: 0.3;
+  color: var(--basic-black);
+  -webkit-transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -ms-transition: opacity .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out;
+  transition: opacity .35s ease-in-out;
 }
 
+.products-filter li>:not(.products-filter-current):hover {
+  opacity: 1;
+}
 
 .products-filter {
   margin-top: 20px;
@@ -1094,6 +1115,31 @@ fieldset {
   justify-content: space-between;
 }
 
+.products-filter-sort {
+  display: flex;
+  align-items: center;
+  width: 40px;
+  justify-content: space-between;
+  /* outline: 5px solid rgba(221, 199, 0, 0.7);
+  outline-offset: -5px; */
+}
+
+.filter-sort a>svg {
+  opacity: 0.3;
+  -webkit-transition: opacity .35s ease-in-out;
+  -moz-transition: opacity .35s ease-in-out;
+  -ms-transition: opacity .35s ease-in-out;
+  -o-transition: opacity .35s ease-in-out;
+  transition: opacity .35s ease-in-out;
+}
+
+.filter-sort a>svg:hover {
+  opacity: 1;
+}
+
+.filter-sort-active a>svg {
+  opacity: 1;
+}
 
 .products-wrap {
   display: grid;
@@ -1163,7 +1209,8 @@ fieldset {
 
 
 .product-details p {
-  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 13px;
 }
 
 
@@ -1186,21 +1233,22 @@ fieldset {
 
 }
 
-.product-title p {
-  font-size: 16px;
+.product-title p,
+.product-details p {
   line-height: 18px;
   text-align: center;
+
 }
 
 .product-details span {
   display: inline-block;
   text-align: center;
   color: var(--basic-white);
-  vertical-align: middle;
   text-transform: uppercase;
   background-color: var(--basic-red);
   border-radius: 3px;
   padding: 17px 72px 15px 72px;
+  cursor: default;
 }
 
 .pagination-list {
