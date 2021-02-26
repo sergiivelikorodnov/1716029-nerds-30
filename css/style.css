@@ -338,6 +338,12 @@ img {
 .button:hover,
 .button:focus {
   background-color: var(--basic-red-hover);
+
+}
+
+.button-filter:focus {
+  border: 2px solid var(--basic-green);
+
 }
 
 .button:active {
@@ -834,6 +840,8 @@ img {
   background-position: 0 0;
   opacity: 0.3;
   cursor: pointer;
+  border: none;
+  background-color: white;
   -webkit-transition: opacity .35s ease-in-out;
   -moz-transition: opacity .35s ease-in-out;
   -ms-transition: opacity .35s ease-in-out;
