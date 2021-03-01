@@ -36,8 +36,11 @@ document.addEventListener('keydown', function (evt) {
     popup.classList.remove('show-popup');
     popup.classList.add('hide-popup');
     console.log('Сообщение отправлено');
+    formName.value='';
+    formEmail.value='';
+    formMessage.value='';
   }else{
     evt.preventDefault();
-  }
+      }
 });
 
