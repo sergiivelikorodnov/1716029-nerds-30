@@ -56,7 +56,7 @@ body {
   min-height: 100vh;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Roboto";
   font-weight: 400;
   font-style: normal;
@@ -81,7 +81,7 @@ body {
   src: local("Roboto Medium"),
        url("fonts/robotomedium.woff2") format("woff2"),
        url("fonts/robotomedium.woff") format("woff");
-}
+} */
 
 a {
   text-decoration: none;
@@ -281,11 +281,15 @@ html{
 }
 
 .slide-description {
-  padding-bottom: 37px;
+  padding-bottom: 27px;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 36px;
 }
 
+.slide-img1 .slide-description{
+  padding-bottom: 37px;
+  padding-top: 26px;
+}
 
 .slide-img1 {
   background-image: url("../img/slide1.jpg");
@@ -312,9 +316,10 @@ html{
 
 .slider-nav-list li{
   display: inline-block;
-  vertical-align: center;
+  vertical-align: top;
   margin-right: 13px;
 }
+
 
 .slider-nav-item{
   height: 18px;
@@ -324,6 +329,7 @@ html{
   text-align: center;
   cursor: pointer;
   border: none;
+  vertical-align: top;
 }
 
 .slider-nav-list li:last-child {
@@ -336,7 +342,7 @@ html{
   height: 10px;
   width: 10px;
   left: 4px;
-  top: 13px;
+  top: 4px;
   border-radius: 50%;
   border: 2px solid var(--basic-slider-nav);
 }
@@ -374,7 +380,7 @@ html{
 
 .button {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   text-align: center;
   color: var(--basic-white);
   vertical-align: middle;
@@ -530,7 +536,7 @@ html{
 
 .features-list li::before {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   content: "";
   width: 25px;
   height: 2px;
@@ -811,7 +817,7 @@ html{
   width: 960px;
   margin: auto;
   left: 50%;
-  top: -100vh;
+  bottom: -100vh;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -819,9 +825,9 @@ html{
   z-index: 10;
   -webkit-box-shadow: 0px 20px 40px var(--basic-extra-shadow);
           box-shadow: 0px 20px 40px var(--basic-extra-shadow);
-  -webkit-transition: top 1.35s ease-in-out;
-  -o-transition: top 1.35s ease-in-out;
-  transition: top 1.35s ease-in-out;
+     -webkit-transition: bottom 1.35s ease-in-out;
+  -o-transition: bottom 1.35s ease-in-out;
+  transition: bottom 1.35s ease-in-out; */
 }
 
 .popup-wrap {
@@ -842,11 +848,11 @@ html{
 }
 
 .show-popup {
-  top: 50vh;
+  bottom:-116px;
 }
 
 .hide-popup {
-  top: -100vh;
+  bottom: -100vh;
 }
 
 .input-wrap label,
@@ -1368,7 +1374,7 @@ h1 {
 
 .pagination-list li {
   display: inline-block;
-  vertical-align: center;
+  vertical-align: middle;
   text-align: center;
   margin-right: 7px;
   margin-bottom: 7px;
