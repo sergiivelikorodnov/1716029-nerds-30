@@ -31,7 +31,7 @@ document.addEventListener('keydown', function (evt) {
 });
 
 formContact.addEventListener("submit", function (evt) {
-  if (!formName.value || !formEmail.value || !formMessage) {
+  if (!formName.value || !formEmail.value || !formMessage.value) {
     formName.classList.remove('invalid-value');
     formEmail.classList.remove('invalid-value');
     formMessage.classList.remove('invalid-value');
